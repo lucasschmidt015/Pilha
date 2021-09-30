@@ -12,7 +12,7 @@ int main(){
     end *last=NULL, *pilha, *aux;
     int acelerador=1;
     while(acelerador){
-        pilha = (end *)malloc(sizeof(end));
+        pilha = (end *)malloc(sizeof(end));\
         scanf("%s", pilha->link);
         pilha->prev=NULL;
         if(strcmp(pilha->link,"E")==0){
@@ -23,7 +23,7 @@ int main(){
                     aux = last;
                     last=last->prev;
                     free(aux);
-                    printf("@\n");
+                    printf("@");
                 }
             }
             break;
