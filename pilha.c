@@ -18,12 +18,13 @@ void printer(end *last){
 int main(){
     end *last=NULL, *pilha, *aux;
     int acelerador=1;
+    char teste[60]={"B"};
     while(acelerador){
         pilha = (end *)malloc(sizeof(end));
         printf("Digita ai: \n");
         scanf("%s", pilha->link);
         pilha->prev=NULL;
-        if(strcpy(pilha->link,'B')==0){
+        if(strcpy(pilha->link,teste)==0){
             break;
         }
         else{
