@@ -8,13 +8,6 @@ struct endereco{
 };
 typedef struct endereco end;
 
-void printer(end *last){
-    end *aux;
-    for(aux=last;aux!=NULL;aux=aux->prev){
-        printf("%s",aux->link);
-    }
-}
-
 int main(){
     end *last=NULL, *pilha, *aux;
     int acelerador=1;
